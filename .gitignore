@@ -1,0 +1,5 @@
+# ignore the folder and subfolders
+/.idea/*
+
+# igonre the *.iml file
+*.iml
