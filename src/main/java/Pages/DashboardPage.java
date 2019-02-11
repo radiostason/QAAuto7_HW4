@@ -15,14 +15,21 @@ public class DashboardPage {
     }
 
     public void clickCreate(){
+
         driver.findElement(By.xpath("//*[@id='create_link']")).click();
     }
 
     public void profileDropdown(){
+
         driver.findElement(By.xpath("//*[@id='header-details-user-fullname']")).click();
     }
 
     public void profileLogOut(){
+
         driver.findElement(By.xpath("//*[@id='log_out']")).click();
+    }
+
+    public void enterSearch(String search){
+        driver.findElement(By.xpath("//input[@id='quickSearchInput']")).sendKeys(search);
     }
 }
