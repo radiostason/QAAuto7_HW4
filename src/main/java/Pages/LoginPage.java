@@ -28,11 +28,12 @@ public class LoginPage {
     }
 
     public void clickLogIn(){
+
         driver.findElement(By.xpath("//*[@id='login-form-submit']")).click();
     }
+  
     public boolean pageIsLoaded(){
         return driver.findElement(By.id("header-details-user-fullname")).isDisplayed();
-
     }
 
 }
